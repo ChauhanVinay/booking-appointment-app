@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking Appointment App</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px; }
+    form { display: flex; flex-direction: column; width: 320px; gap: 10px; margin-bottom: 25px; }
+    input, button { padding: 8px; font-size: 14px; }
+    ul { list-style: none; padding: 0; }
+    li { display: flex; justify-content: space-between; align-items: center; width: 380px; padding: 6px 10px; margin-bottom: 8px; border: 1px solid #ccc; border-radius: 4px; }
+    .delete-btn { background-color: #e53e3e; color: white; border: none; padding: 5px 10px; cursor: pointer; border-radius: 3px; }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"></script>
+</head>
+<body>
+  <h2>Booking Appointment App</h2>
+  <form id="appointment-form">
+    <input type="text" id="name" placeholder="Name" required />
+    <input type="email" id="email" placeholder="Email" required />
+    <input type="tel" id="phone" placeholder="Phone Number" required />
+    <button type="submit">Add Appointment</button>
+  </form>
+
+  <h3>Appointments</h3>
+  <ul id="user-list"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
